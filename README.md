@@ -172,6 +172,8 @@ Sending a **GET** request on the resource `/v1/rentaloffers/offers?pickupStation
 ### Request
 ```
 https://web-api.orange.sixt.com/v1/rentaloffers/offers?pickupStation=<pickupStation>&returnStation=<returnStation>&pickupDate=<PICKUP_DATE>&returnDate=<RETURN_DATE>&areaCode=de&vehicleType=car
+
+e.g.: https://web-api.orange.sixt.com/v1/rentaloffers/offers?pickupStation=4&returnStation=4&pickupDate=2018-12-17T12:00:00&returnDate=2018-12-19T09:00:00&carType=car&campaign=default&currency=EUR&profileId=
 ```
 
 ### Response
