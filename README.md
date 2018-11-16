@@ -1,6 +1,9 @@
 # Sixt @hackaTUM 
 Sixt is on the way from being Europe's leading car rental company to becoming a global mobility provider that will disrupt the entire market. Take your place on the driver seat of this journey and choose if you want to build a more secure way of carsharing using blockchain, improve user experience via AR or create anything else simply awesome with our APIs and telematic solutions which allow you to unlock the car with a web-service call.
 
+# STYLEGUIDE
+`styleguide.sixt.io`
+
 # API
 
 ## Telematics
