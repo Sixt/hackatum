@@ -9,7 +9,7 @@ Sixt is on the way from being Europe's leading car rental company to becoming a 
 ## Telematics
 ### Available Cars
 
-BMW 1er | BMW 3er | BMW i8
+BMW i8 | BMW 3er | BMW 1er
 --- | --- | ---
 WBY2Z61040VG33170 | WBA8J11070A698134 | WBA1S710707B62821
 
