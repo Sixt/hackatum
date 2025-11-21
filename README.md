@@ -47,3 +47,8 @@ We have a car parked at the campus, this car can be unlocked / locked / letting 
 ```POST /api/car/blink```
 
 
+
+## Postman Collection
+
+Postman collection is available in the postman directory.
+It can be easily imported into postman to test the APO.
