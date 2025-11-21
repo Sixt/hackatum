@@ -47,3 +47,4 @@ We have a car parked at the campus, this car can be unlocked / locked / letting 
 ```POST /api/car/blink```
 
 
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run/collection/50137785-5b48c660-f463-42e5-b16a-a82d02c525f3?action=collection%2F50137785-5b48c660-f463-42e5-b16a-a82d02c525f3)
