@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "d7b63230-ad76-4f00-af4c-953b2cd7bb78",
+		"name": "hacktum25",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1005149"
+	},
+	"item": [
+		{
+			"name": "Booking Management",
+			"item": [
+				{
+					"name": "Create Booking",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = pm.response.json();",
+									"newBookingId = jsonDat.id",
+									"pm.collectionVariables.set(\"BOOKING_ID\", \"1234\");",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking/{{BOOKING_ID}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking",
+								"{{BOOKING_ID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Available Vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking/{{BOOKING_ID}}/vehicles",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking",
+								"{{BOOKING_ID}}",
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Available Protection Packages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking/{{BOOKING_ID}}/protections",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking",
+								"{{BOOKING_ID}}",
+								"protections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Available Addons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking/{{BOOKING_ID}}/addons",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking",
+								"{{BOOKING_ID}}",
+								"addons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Vehicle to Booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking/{{BOOKING_ID}}/vehicles/{{VEHICLE_ID}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking",
+								"{{BOOKING_ID}}",
+								"vehicles",
+								"{{VEHICLE_ID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Protection Package to Booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking/{{BOOKING_ID}}/protections/{{PACKAGE_ID}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking",
+								"{{BOOKING_ID}}",
+								"protections",
+								"{{PACKAGE_ID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Complete Booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking/{{BOOKING_ID}}/complete",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking",
+								"{{BOOKING_ID}}",
+								"complete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sixt Vehicle on the Campus",
+			"item": [
+				{
+					"name": "Lock Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/car/lock",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"car",
+								"lock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unlock Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/car/unlock",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"car",
+								"unlock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Blink Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/car/blink",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"car",
+								"blink"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://hackatum25.sixt.io",
+			"type": "string"
+		},
+		{
+			"key": "BOOKING_ID",
+			"value": "ENTER_BOOKING_ID",
+			"type": "string"
+		},
+		{
+			"key": "VEHICLE_ID",
+			"value": "ENTER_VEHICLE_ID",
+			"type": "string"
+		},
+		{
+			"key": "PACKAGE_ID",
+			"value": "ENTER_PACKAGE_ID",
+			"type": "string"
+		}
+	]
+}
